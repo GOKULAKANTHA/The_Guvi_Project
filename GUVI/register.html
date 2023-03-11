@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Page</title>
+	<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-10 offset-1">
+				<div class="content">
+					<h1 class="text-center mt-5 mb-4">Register</h1>
+					<form id="registration-form">
+						<div class="form-group">
+							<label for="remail">Email address</label>
+							<input type="email" class="form-control" name="remail" id="remail" aria-describedby="emailHelp"
+								placeholder="Enter email" required>
+							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+								else.</small>
+						</div>
+						<div class="form-group">
+							<label for="rpassword">Password</label>
+							<input type="password" class="form-control" name="rpassword" id="rpassword" placeholder="Password" required>
+						</div>
+						<div class="form-group">
+							<label for="cpassword">Confirm Password</label>
+							<input type="password" class="form-control" name="cpassword" id="cpassword" placeholder="Password" required>
+						</div>
+						<div class="d-flex justify-content-center mt-4">
+							<button type="submit" class="btn btn-primary mr-3" id="register-button">Register</button>
+							<a href="index.html" class="btn btn-secondary">Cancel</a>
+						</div>
+					
+					</form>
+					<div id="message"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/register.js"></script>
+
+</body>
+
+</html>
